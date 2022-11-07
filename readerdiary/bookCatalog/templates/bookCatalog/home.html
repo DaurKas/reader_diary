@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <h1>Catalog main page</h1>
+        {% for book in books %}
+            <h2>{{ book.title }}</h2>
+            <p>By {{ book.author }} ({{book.publishing_year}})</p>
+            <p>Genre: {{ book.genre }}</p>
+        {% endfor %}
+    </body>
+</html>
